@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+    <!--card wrapper-->
+    <div class="rounded-3xl overflow-hidden bg-white lg:max-w-[450px]">
+      <!--card image-->
+      <div>
+        <img src="./images/illustration-hero.svg" alt="dancing woman image" />
+      </div>
+      <!--card body-->
+      <main class="text-center pt-[45px] pb-[35px] px-6">
+        <!--card header-->
+        <header class="mb-6 lg:mb-8">
+          <h1
+            class="text-[1.45rem] text-neutral-darkblue font-bold mb-4 lg:text-1.75 lg:font-extrabold"
+          >
+            Order Summary
+          </h1>
+          <p
+            class="text-base text-neutral-desaturatedblue font-medium mb-6 lg:text-center lg:text-1 lg:font-semibold lg:leading-1.5 lg:px-8 lg:mb-[22px]"
+          >
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <!--content wrapper-->
+          <div
+            class="plan flex gap-4 items-center bg-neutral-verypaleblue px-4 py-4 lg:gap-6 rounded-lg lg:py-[23px]"
+          >
+            <img class="size-12" src="./images/icon-music.svg" alt="" />
+            <div>
+              <strong
+                class="text-1 block text-neutral-darkblue lg:font-extrabold lg:text-[17px] lg:mb-1"
+              >
+                Annual Plan</strong
+              >
+              <span
+                class="font-medium text-sm text-neutral-desaturatedblue lg:text-base lg:font-bold"
+              >
+                $59.99/year</span
+              >
+            </div>
+            <a
+              class="changePlan block underline text-sm ml-auto text-primary-brightblue font-bold lg:text-[14.5px]"
+              href="#"
+              >Change</a
+            >
+          </div>
+
+          <!--change plan-->
+          <div
+            class="saveChange hidden gap-4 items-center bg-neutral-verypaleblue px-4 py-4 lg:gap-6 rounded-lg lg:py-[23px]"
+          >
+            <div>
+              <strong
+                class="text-1 block text-neutral-darkblue lg:font-extrabold lg:text-[17px] lg:mb-1"
+              >
+                Weekly Plan</strong
+              >
+              <span
+                class="font-medium text-sm text-neutral-desaturatedblue lg:text-base lg:font-bold"
+              >
+                $9.05/year</span
+              >
+            </div>
+            <div>
+              <strong
+                class="text-1 block text-neutral-darkblue lg:font-extrabold lg:text-[17px] lg:mb-1"
+              >
+                Monthly Plan</strong
+              >
+              <span
+                class="font-medium text-sm text-neutral-desaturatedblue lg:text-base lg:font-bold"
+              >
+                $15.85/year</span
+              >
+            </div>
+            <a
+              class="saveChangeBtn block underline text-sm ml-auto text-primary-brightblue font-bold lg:text-[14.5px]"
+              href="#"
+              >Save Change</a
+            >
+          </div>
+        </header>
+        <!--card header-->
+        <footer>
+          <ul
+            class="flex flex-col gap-6 lg:gap-[1.2rem] text-neutral-desaturatedblue"
+          >
+            <li class="active">
+              <a class="font-medium lg:text-[15px] lg:font-bold py-3" href="#"
+                >Proceed to Payment</a
+              >
+            </li>
+            <li class="">
+              <a class="font-bold py-3 lg:font-bold" href="#">Cancel Order</a>
+            </li>
+          </ul>
+        </footer>
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
